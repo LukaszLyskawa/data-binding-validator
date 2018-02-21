@@ -1,11 +1,15 @@
 buildscript {
+    ext.compileVersion=27
+    ext.android_plugin_version = '3.0.1'
+    ext.supportLibrary = '27.0.2'
     repositories {
         maven { url 'https://maven.google.com' }
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:3.0.1'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+        classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.8.2'
     }
 }
 
